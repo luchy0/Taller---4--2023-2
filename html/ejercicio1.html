@@ -12,8 +12,8 @@
             <legend>your details</legend>
 
             <ol style="list-style-type: decimal;">
-                <li>Name  &nbsp;<input type="text" placeholder="First and last name"></li>
-                <li>Email &nbsp;<input type="text" placeholder="example@domain.com"></li>
+                <li>Name  &nbsp;<input type="text" placeholder="First and last name" pattern="[A-Za-z\s]*" required></li>
+                <li>Email &nbsp;<input type="text" placeholder="example@domain.com" pattern="[A-Za-z0-9._]+@[A-Za-z0-9._]+\.[A-Za-z]{7-30}" required></li>
                 <li>Phone <input type="text" placeholder="Eg. +447500000000"></li>
             </ol>
         </fieldset>
@@ -23,7 +23,7 @@
 
             <ol style="list-style-type: decimal;">
                 <li>Address  &nbsp;<textarea name="" id="" cols="30" rows="10"></textarea> </li>
-                <li>Post code &nbsp;<input type="text" ></li>
+                <li>Post code &nbsp;<input type="number" pattern="[0-9]{6-8}" required></li>
                 <li>Country <input type="text"></li>
                 
             </ol>
@@ -37,14 +37,14 @@
                     <fieldset>
                         <legend>Card type</legend>
                         <ol>
-                            <li><input type="radio" name="card type">VISA</li>
+                            <li><input type="radio" name="card type" required>VISA</li>
                             <li><input type="radio" name="card type">AmEx</li>
                             <li><input type="radio" name="card type">Mastercard</li>
                         </ol>
                     </fieldset>
                 </li>
-                <li>Card number &nbsp;<input type="text"></li>
-                <li>Security code <input type="text"></li>
+                <li>Card number &nbsp;<input type="number" pattern="[0-9]{1-3}" required></li>
+                <li>Security code <input type="text" pattern="R\d+" required></li>
                 <li>Name on card <input type="text" placeholder="Exact name as on the card"></li>
             </ol>
         </fieldset>
