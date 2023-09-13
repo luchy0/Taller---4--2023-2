@@ -15,13 +15,13 @@
         <input type="radio" name="sexo">Mrs.
         <input type="radio" name="sexo">Ms. <br><br>
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name <input type="text" placeholder="First Name" style="margin-left: 100px; margin-bottom: 5px;"> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name <input type="text" placeholder="First Name" style="margin-left: 100px; margin-bottom: 5px;" pattern="(Mr|Ms|Mrs)" required> <br>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name <input type="text" placeholder="Last Name" style="margin-left: 102px; margin-bottom: 5px;"> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name <input type="text" placeholder="Last Name" style="margin-left: 102px; margin-bottom: 5px;" pattern="(Mr|Ms|Mrs)" required> <br>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail <input type="text" style="margin-left: 141px; margin-bottom: 5px;"> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail <input type="text" style="margin-left: 141px; margin-bottom: 5px;" pattern="[A-Za-z._0-9]+@+cecar.edu.co" required> <br>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address <input type="text" style="margin-left: 119px; margin-bottom: 5px;"> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address <input type="text" style="margin-left: 119px; margin-bottom: 5px;" pattern="[A-Za-z0-9]{1-100}" required> <br>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City <input type="text" style="margin-left: 144px; margin-bottom: 5px;"> <br>
 
@@ -34,6 +34,7 @@
                
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip <input type="text" style="margin-left: 149px; margin-bottom: 5px;"><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upload Photo <input type="button" style="margin-left: 82px; margin-bottom: 5px;" value="Browse...">&nbsp;&nbsp; No file selected.<br>
+        <input type="submit" value="Guardar" style="margin-left: 50px; margin-top: 50px;">
     </form>
     
 </body>
