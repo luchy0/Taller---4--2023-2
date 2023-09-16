@@ -15,9 +15,9 @@
         <input type="radio" name="sexo">Mrs.
         <input type="radio" name="sexo">Ms. <br><br>
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name <input type="text" placeholder="First Name" style="margin-left: 100px; margin-bottom: 5px;" pattern="(Mr|Ms|Mrs)" required> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name <input type="text" placeholder="First Name" style="margin-left: 100px; margin-bottom: 5px;" pattern="^(Mr|Ms|Mrs)\s[a-zA-Z]+\s[a-zA-Z]+$" required> <br>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name <input type="text" placeholder="Last Name" style="margin-left: 102px; margin-bottom: 5px;" pattern="(Mr|Ms|Mrs)" required> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name <input type="text" placeholder="Last Name" style="margin-left: 102px; margin-bottom: 5px;" pattern="^(Mr|Ms|Mrs)\s{1,3}[a-zA-Z]+\s{1,3}[a-zA-Z]+$" required> <br>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail <input type="text" style="margin-left: 141px; margin-bottom: 5px;" pattern="[A-Za-z._0-9]+@+cecar.edu.co" required> <br>
 
